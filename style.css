@@ -1,6 +1,9 @@
 /* universal properties */
-body,html {
+body, html {
     height: 100%;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    color:antiquewhite;
 }
 
 .hero-image {
@@ -20,4 +23,78 @@ body,html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: antiquewhite;
+    size: 100px;
+}
+
+div.stuff {
+    width: 280px;
+    word-wrap: break-word;
+    overflow: auto;
+    text-align: left;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: black;
+    float: left;
+    margin: 10px;
+    padding: 5px;
+    /* color: antiquewhite; */
+    /* background-color: rgb(33, 105, 139); */
+}
+
+
+div#first{
+    background-color: #332d56;
+}
+
+div#second{
+    background-color: #352c22;
+}
+
+div#third{
+    background-color: #79593d;
+}
+
+div#fourth{
+    background-color:#6C677B;
+}
+
+div#fifth{
+    background-color: #C4795E;
+}
+
+/* use major mono Display for all headings h1-h6 */
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Major Mono Display', monospace;
+}
+
+/* style the navbar */
+#navbar{
+    overflow: hidden;
+    background-color: rgb(50, 38, 134);
+}
+#navbar a{
+    float: left;
+    display: block;
+    color: aliceblue;
+    font-family: 'Major Mono Display', monospace;
+    text-align: center;
+    padding:14px;
+    text-decoration: none;
+}
+
+#navbar a:hover{
+    color:cyan;
+    background-color: #C4795E;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
 }
